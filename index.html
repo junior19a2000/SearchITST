@@ -10,12 +10,12 @@
     <title>stlite app</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@stlite/mountable/build/stlite.css"
+      href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.52.1/build/stlite.css"
     />
   </head>
   <body>
     <div id="root"></div>
-    <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable/build/stlite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.52.1/build/stlite.js"></script>
     <script>
 stlite.mount(
   {
@@ -64,13 +64,13 @@ def cargando_informacion_espere_porfavor():
     data_id2022I1 = pd.read_excel(pd.ExcelFile(f"https://docs.google.com/spreadsheets/d/1H0irzXgs5Fiig45EPTHPwQi6y6XZXuIZ/export?format=xlsx")).fillna('No existe o No se encontro coincidencias')
     data_id2022I2 = pd.read_excel(pd.ExcelFile(f"https://docs.google.com/spreadsheets/d/1TQ4EaGcr_mDxsOiNJGWaB1Rt2ZOucRZg/export?format=xlsx"))
     data_usuarios = pd.read_excel(pd.ExcelFile(f"https://docs.google.com/spreadsheets/d/1hQauRy8B1FdZMRKYdG4yzi0tAbI2y7iA/export?format=xlsx")).fillna('No existe o No se encontro coincidencias')
-    return data_id2015I1, data_id2015I2, data_id2016I1, data_id2016I2, data_id2017I1, data_id2017I2, data_id2018I1, data_id2018I2, \
-           data_id2019I1, data_id2019I2, data_id2020I1, data_id2020I2, data_id2021I1, data_id2021I2, data_id2022I1, data_id2022I2, \
+    return data_id2015I1, data_id2015I2, data_id2016I1, data_id2016I2, data_id2017I1, data_id2017I2, data_id2018I1, data_id2018I2, \\
+           data_id2019I1, data_id2019I2, data_id2020I1, data_id2020I2, data_id2021I1, data_id2021I2, data_id2022I1, data_id2022I2, \\
            data_usuarios
 data_id2015I1, data_id2015I2, data_id2016I1, data_id2016I2, data_id2017I1, data_id2017I2, data_id2018I1, data_id2018I2, data_id2019I1, data_id2019I2, data_id2020I1, data_id2020I2, data_id2021I1, data_id2021I2, data_id2022I1, data_id2022I2, data_usuarios = cargando_informacion_espere_porfavor()
 
 def valid(semilist):
-    separ = re.findall('\(.*?\)', semilist)
+    separ = re.findall('\\(.*?\\)', semilist)
     words = [[] for i in range(len(separ))]
     j     = -1
     for i in separ:
@@ -391,5 +391,5 @@ else:
 
     </script>
   </body>
-  <!-- Generated from stlite sharing (https://edit.share.stlite.net/), and the source version is 04e1e1d446beb3e26435249c6eba551bd1692c06 -->
+  <!-- Generated from stlite sharing (https://edit.share.stlite.net/), and the source version is 8b72571ae0233544f6223a3cd848f08629ed0336 -->
 </html>
