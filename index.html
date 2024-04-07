@@ -212,7 +212,7 @@ def findexp(value1, value2, value3, value4, value5, value6, year):
                             break
                     if k == (len(infor) - 1):
                         extract.append([expediente, concesionaria, materia, sumilla])
-                empty1.progress(float(i / max_value), text = None)
+                empty1.progress(float((i + 1) / max_value), text = None)
         elif year == '2016':
             max_value = data_id2016I2.shape[0]
             for i in range(max_value):
@@ -227,7 +227,7 @@ def findexp(value1, value2, value3, value4, value5, value6, year):
                             break
                     if k == (len(infor) - 1):
                         extract.append([expediente, concesionaria, materia, sumilla])
-                empty1.progress(float(i / max_value), text = None)
+                empty1.progress(float((i + 1) / max_value), text = None)
         elif year == '2017':
             max_value = data_id2017I2.shape[0]
             for i in range(max_value):
@@ -242,7 +242,7 @@ def findexp(value1, value2, value3, value4, value5, value6, year):
                             break
                     if k == (len(infor) - 1):
                         extract.append([expediente, concesionaria, materia, sumilla])
-                empty1.progress(float(i / max_value), text = None)
+                empty1.progress(float((i + 1) / max_value), text = None)
         elif year == '2018':
             max_value = data_id2018I2.shape[0]
             for i in range(max_value):
@@ -257,7 +257,7 @@ def findexp(value1, value2, value3, value4, value5, value6, year):
                             break
                     if k == (len(infor) - 1):
                         extract.append([expediente, concesionaria, materia, sumilla])
-                empty1.progress(float(i / max_value), text = None)
+                empty1.progress(float((i + 1) / max_value), text = None)
         elif year == '2019':
             max_value = data_id2019I2.shape[0]
             for i in range(max_value):
@@ -272,7 +272,7 @@ def findexp(value1, value2, value3, value4, value5, value6, year):
                             break
                     if k == (len(infor) - 1):
                         extract.append([expediente, concesionaria, materia, sumilla])
-                empty1.progress(float(i / max_value), text = None)
+                empty1.progress(float((i + 1) / max_value), text = None)
         elif year == '2020':
             max_value = data_id2020I2.shape[0]
             for i in range(max_value):
@@ -287,7 +287,7 @@ def findexp(value1, value2, value3, value4, value5, value6, year):
                             break
                     if k == (len(infor) - 1):
                         extract.append([expediente, concesionaria, materia, sumilla])
-                empty1.progress(float(i / max_value), text = None)
+                empty1.progress(float((i + 1) / max_value), text = None)
         elif year == '2021':
             max_value = data_id2021I2.shape[0]
             for i in range(max_value):
@@ -302,7 +302,7 @@ def findexp(value1, value2, value3, value4, value5, value6, year):
                             break
                     if k == (len(infor) - 1):
                         extract.append([expediente, concesionaria, materia, sumilla])
-                empty1.progress(float(i / max_value), text = None)
+                empty1.progress(float((i + 1) / max_value), text = None)
         elif year == '2022':
             max_value = data_id2022I2.shape[0]
             for i in range(max_value):
@@ -317,7 +317,7 @@ def findexp(value1, value2, value3, value4, value5, value6, year):
                             break
                     if k == (len(infor) - 1):
                         extract.append([expediente, concesionaria, materia, sumilla])
-                empty1.progress(float(i / max_value), text = None)
+                empty1.progress(float((i + 1) / max_value), text = None)
         if extract == []:
             extract.append(['NO', 'SE', 'ENCONTRARON', 'RESULTADOS'])
         df = pd.DataFrame(extract)
